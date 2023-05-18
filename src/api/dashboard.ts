@@ -6,8 +6,19 @@ export interface ContentDataRecord {
   y: number;
 }
 
+export interface BaseDataRecord {
+  apiCount: number;
+  apiCaseCount: number;
+  sceneCount: number;
+  cronJobCount: number;
+}
+
 export function queryContentData() {
-  return axios.get<ContentDataRecord[]>('/api/content-data');
+  return axios.get<ContentDataRecord[]>('/v1/api/management/content-data');
+}
+
+export function queryBaseData() {
+  return axios.get<BaseDataRecord[]>('/v1/api/management/info');
 }
 
 export interface PopularRecord {
@@ -18,5 +29,5 @@ export interface PopularRecord {
 }
 
 export function queryPopularList(params: { type: string }) {
-  return axios.get<TableData[]>('/api/popular/list', { params });
+  return axios.get<TableData[]>('/v1/api/popular/list', { params });
 }

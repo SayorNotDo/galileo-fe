@@ -12,21 +12,10 @@ import useAppStore from '../app';
 
 const useUserStore = defineStore('user', {
   state: (): UserState => ({
-    name: undefined,
-    avatar: undefined,
-    job: undefined,
-    organization: undefined,
-    location: undefined,
+    nickname: undefined,
+    chineseName: undefined,
     email: undefined,
-    introduction: undefined,
-    personalWebsite: undefined,
-    jobName: undefined,
-    organizationName: undefined,
-    locationName: undefined,
     phone: undefined,
-    registrationDate: undefined,
-    accountId: undefined,
-    certification: undefined,
     role: '',
   }),
 
@@ -56,7 +45,6 @@ const useUserStore = defineStore('user', {
     // Get user's information
     async info() {
       const res = await getUserInfo();
-
       this.setInfo(res.data);
     },
 

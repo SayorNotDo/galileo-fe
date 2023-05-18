@@ -102,7 +102,7 @@ const videoList = [
 ];
 setupMock({
   setup() {
-    Mock.mock(new RegExp('/api/content-data'), () => {
+    Mock.mock(new RegExp('/api/management/content-data'), () => {
       const presetData = [58, 81, 53, 90, 64, 88, 49, 79];
       const getLineData = () => {
         const count = 8;

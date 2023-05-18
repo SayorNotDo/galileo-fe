@@ -6,11 +6,14 @@
       :body-style="{
         paddingTop: '20px',
       }"
-      :title="$t('workplace.contentData')"
     >
-      <template #extra>
-        <a-link>{{ $t('workplace.viewMore') }}</a-link>
-      </template>
+      <a-typography-title :heading="5" style="margin-top: 0">
+        {{ $t('workplace.functionality.testing') }}
+      </a-typography-title>
+      <a-divider class="panel-border" />
+      <!--      <template #extra>-->
+      <!--        <a-link>{{ $t('workplace.viewMore') }}</a-link>-->
+      <!--      </template>-->
       <Chart height="289px" :option="chartOption" />
     </a-card>
   </a-spin>
@@ -177,17 +180,17 @@
   const fetchData = async () => {
     setLoading(true);
     try {
-      const { data: chartData } = await queryContentData();
-      chartData.forEach((el: ContentDataRecord, idx: number) => {
-        xAxis.value.push(el.x);
-        chartsData.value.push(el.y);
-        if (idx === 0) {
-          graphicElements.value[0].style.text = el.x;
-        }
-        if (idx === chartData.length - 1) {
-          graphicElements.value[1].style.text = el.x;
-        }
-      });
+      // const { data: chartData } = await queryContentData();
+      // chartData.forEach((el: ContentDataRecord, idx: number) => {
+      //   xAxis.value.push(el.x);
+      //   chartsData.value.push(el.y);
+      //   if (idx === 0) {
+      //     graphicElements.value[0].style.text = el.x;
+      //   }
+      //   if (idx === chartData.length - 1) {
+      //     graphicElements.value[1].style.text = el.x;
+      //   }
+      // });
     } catch (err) {
       // you can report use errorHandler or other
     } finally {

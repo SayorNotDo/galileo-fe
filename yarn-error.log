@@ -1,8 +1,8 @@
 Arguments: 
-  /opt/homebrew/Cellar/node/18.9.0/bin/node /Users/chenwentao/.cache/node/corepack/yarn/1.22.19/bin/yarn.js
+  /opt/homebrew/Cellar/node/18.9.0/bin/node /Users/chenwentao/.cache/node/corepack/yarn/1.22.19/bin/yarn.js install
 
 PATH: 
-  /Library/Frameworks/Python.framework/Versions/3.10/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/Library/Apple/usr/bin:/Applications/Wireshark.app/Contents/MacOS:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Users/chenwentao/.cargo/bin:/usr/local/apache-maven-3.8.6/bin:/usr/local/mysql/bin:/Users/chenwentao/go/bin:/Users/chenwentao/Library/Application Support/JetBrains/Toolbox/scripts:/Applications/Postgres.app/Contents/Versions/15/bin:/Users/chenwentao/Library/Android/sdk/platform-tools:/Users/chenwentao/Library/Android/sdk/tools:[PATH_OF_FLUTTER_GIT_DIRECTORY]/bin
+  /Library/Frameworks/Python.framework/Versions/3.10/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/Library/Apple/usr/bin:/Applications/Wireshark.app/Contents/MacOS:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Users/chenwentao/.cargo/bin:/Users/chenwentao/Desktop/code/galileo-fe/node_modules/.bin:/usr/local/apache-maven-3.8.6/bin:/usr/local/mysql/bin:/Users/chenwentao/go/bin:/Users/chenwentao/Library/Application Support/JetBrains/Toolbox/scripts:/Applications/Postgres.app/Contents/Versions/15/bin:/Users/chenwentao/Library/Android/sdk/platform-tools:/Users/chenwentao/Library/Android/sdk/tools:[PATH_OF_FLUTTER_GIT_DIRECTORY]/bin
 
 Yarn version: 
   1.22.19
@@ -14,16 +14,7 @@ Platform:
   darwin arm64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/@typescript-eslint%2feslint-plugin: ESOCKETTIMEDOUT
-      at ClientRequest.<anonymous> (/Users/chenwentao/.cache/node/corepack/yarn/1.22.19/lib/cli.js:141517:19)
-      at Object.onceWrapper (node:events:627:28)
-      at ClientRequest.emit (node:events:513:28)
-      at TLSSocket.emitRequestTimeout (node:_http_client:838:9)
-      at Object.onceWrapper (node:events:627:28)
-      at TLSSocket.emit (node:events:525:35)
-      at Socket._onTimeout (node:net:562:8)
-      at listOnTimeout (node:internal/timers:564:17)
-      at process.processTimers (node:internal/timers:507:7)
+  Error: ENOENT: no such file or directory, copyfile '/Users/chenwentao/Library/Caches/Yarn/v6/npm-estraverse-4.3.0-398ad3f3c5a24948be7725e83d11a7de28cdbd1d-integrity/node_modules/estraverse/gulpfile.js' -> '/Users/chenwentao/Desktop/code/galileo-fe/node_modules/@typescript-eslint/utils/node_modules/estraverse/gulpfile.js'
 
 npm manifest: 
   {
@@ -60,6 +51,7 @@ npm manifest:
     "dependencies": {
       "@arco-design/web-vue": "^2.44.7",
       "@vueuse/core": "^9.3.0",
+      "arco-design-pro-vue": "^2.7.2",
       "axios": "^0.24.0",
       "dayjs": "^1.11.5",
       "echarts": "^5.4.0",
