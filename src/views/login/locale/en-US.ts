@@ -1,5 +1,5 @@
 export default {
-  'login.form.title': 'Login to Galileo AutoTest',
+  'login.form.title': 'Galileo AutoTest',
   'login.form.userName.errMsg': 'Username cannot be empty',
   'login.form.password.errMsg': 'Password cannot be empty',
   'login.form.login.errMsg': 'Login error, refresh and try again',
