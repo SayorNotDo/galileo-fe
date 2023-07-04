@@ -10,12 +10,14 @@ export interface LoginData {
 export interface LoginRes {
   token: string;
 }
+
+export interface LogoutRes {}
 export function login(data: LoginData) {
   return axios.post<LoginRes>('v1/api/user/login', data);
 }
 
 export function logout() {
-  return axios.post<LoginRes>('v1/api/user/logout');
+  return axios.post<LogoutRes>('v1/api/user/logout', {});
 }
 
 export function getUserInfo() {

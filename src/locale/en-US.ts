@@ -2,8 +2,11 @@ import localeMessageBox from '@/components/message-box/locale/en-US';
 import localeLogin from '@/views/login/locale/en-US';
 
 import localeWorkplace from '@/views/dashboard/workplace/locale/en-US';
-import localeApiManagement from '@/views/api-management/definition/locale/zh-CN';
+import localeApiDashboard from '@/views/api-test/dashboard/locale/en-US';
 
+import localeApiDefinition from '@/views/api-test/definition/locale/en-US';
+
+import localeUiManagement from '@/views/ui-test/element-management/locale/en-US';
 import localeSettings from './en-US/settings';
 
 export default {
@@ -26,5 +29,7 @@ export default {
   ...localeMessageBox,
   ...localeLogin,
   ...localeWorkplace,
-  ...localeApiManagement,
+  ...localeApiDashboard,
+  ...localeApiDefinition,
+  ...localeUiManagement,
 };

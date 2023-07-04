@@ -35,6 +35,7 @@ axios.interceptors.request.use(
     return Promise.reject(error);
   }
 );
+
 // add response interceptors
 axios.interceptors.response.use(
   (response: AxiosResponse<HttpResponse>) => {

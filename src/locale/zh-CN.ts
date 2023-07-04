@@ -3,12 +3,15 @@ import localeLogin from '@/views/login/locale/zh-CN';
 
 import localeWorkplace from '@/views/dashboard/workplace/locale/zh-CN';
 
-import localeApiManagement from '@/views/api-management/definition/locale/zh-CN';
+import localeApiDefinition from '@/views/api-test/definition/locale/zh-CN';
 
+import localApiDashboard from '@/views/api-test/dashboard/locale/zh-CN';
+
+import localeUiManagement from '@/views/ui-test/element-management/locale/zh-CN';
 import localeSettings from './zh-CN/settings';
 
 export default {
-  'menu.dashboard': '测试管理',
+  'menu.dashboard': '工作台',
   'menu.server.dashboard': '测试管理-服务端',
   'menu.server.workplace': '测试跟踪-服务端',
   'menu.server.monitor': '实时监控-服务端',
@@ -27,5 +30,7 @@ export default {
   ...localeMessageBox,
   ...localeLogin,
   ...localeWorkplace,
-  ...localeApiManagement,
+  ...localApiDashboard,
+  ...localeApiDefinition,
+  ...localeUiManagement,
 };

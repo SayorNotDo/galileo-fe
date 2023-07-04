@@ -1,5 +1,5 @@
 export default {
-  'menu.dashboard.workplace': '测试跟踪',
+  'menu.dashboard.workplace': '仪表盘',
   'workplace.api.testing': '接口测试',
   'workplace.functionality.testing': '功能测试',
   'workplace.welcome': '欢迎回来！',

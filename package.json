@@ -1,9 +1,9 @@
 {
-  "name": "arco-design-pro-vue",
-  "description": "Arco Design Pro for Vue",
+  "name": "galileo",
+  "description": "enjoy yourself",
   "version": "1.0.0",
   "private": true,
-  "author": "ArcoDesign Team",
+  "author": "SayorNottt",
   "license": "MIT",
   "scripts": {
     "dev": "vite --config ./config/vite.config.dev.ts",

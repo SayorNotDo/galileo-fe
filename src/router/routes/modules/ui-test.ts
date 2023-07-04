@@ -2,22 +2,22 @@ import { DEFAULT_LAYOUT } from '../base';
 import { AppRouteRecordRaw } from '../types';
 
 const ApiManagement: AppRouteRecordRaw = {
-  path: '/apiManagement',
-  name: 'apiManagement',
+  path: '/uiManagement',
+  name: 'uiManagement',
   component: DEFAULT_LAYOUT,
   meta: {
-    locale: 'menu.api-management',
+    locale: 'menu.ui-management',
     requiresAuth: true,
     icon: 'icon-dashboard',
     order: 1,
   },
   children: [
     {
-      path: 'definition',
-      name: 'definition',
-      component: () => import('@/views/api-management/definition/index.vue'),
+      path: 'element-management',
+      name: 'element-management',
+      component: () => import('@/views/ui-test/element-management/index.vue'),
       meta: {
-        locale: 'menu.api-management.definition',
+        locale: 'menu.ui-management.repository',
         requiresAuth: true,
         roles: ['*'],
       },
