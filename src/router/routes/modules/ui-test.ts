@@ -1,12 +1,12 @@
 import { DEFAULT_LAYOUT } from '../base';
 import { AppRouteRecordRaw } from '../types';
 
-const ApiManagement: AppRouteRecordRaw = {
+const UiManagement: AppRouteRecordRaw = {
   path: '/uiManagement',
   name: 'uiManagement',
   component: DEFAULT_LAYOUT,
   meta: {
-    locale: 'menu.ui-management',
+    locale: 'menu.ui-test',
     requiresAuth: true,
     icon: 'icon-dashboard',
     order: 1,
@@ -17,11 +17,11 @@ const ApiManagement: AppRouteRecordRaw = {
       name: 'element-management',
       component: () => import('@/views/ui-test/element-management/index.vue'),
       meta: {
-        locale: 'menu.ui-management.repository',
+        locale: 'menu.ui-test.repository',
         requiresAuth: true,
         roles: ['*'],
       },
     },
   ],
 };
-export default ApiManagement;
+export default UiManagement;

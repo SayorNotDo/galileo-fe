@@ -1,4 +1,4 @@
 export default {
-  'menu.ui-management': 'UI测试',
-  'menu.ui-management.repository': '元素仓库',
+  'menu.ui-test': 'UI测试',
+  'menu.ui-test.repository': '元素库',
 };

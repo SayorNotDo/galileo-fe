@@ -1,4 +1,4 @@
 export default {
-  'menu.ui-management': 'Element Management',
-  'menu.ui-management.repository': 'Element Repository',
+  'menu.ui-test': 'Element Management',
+  'menu.ui-test.repository': 'Element Repository',
 };

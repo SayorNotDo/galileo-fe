@@ -1,11 +1,9 @@
 <template>
-  <div></div>
+  <div><ApiForm /></div>
 </template>
 
-<script>
-  export default {
-    name: 'ApiDefinition',
-  };
+<script setup>
+  import ApiForm from '@/views/api-test/definition/components/api-form.vue';
 </script>
 
 <style lang="less" scoped>
