@@ -16,7 +16,7 @@ export default {
   'api-test.definition.description': '描述',
   'api-test.definition.send': '发送',
   'api-test.definition.Params': '请求参数',
-  'api-test.definition.Authorization': '请求配置',
+  'api-test.definition.Authorization': '认证配置',
   'api-test.definition.Headers': '请求头',
   'api-test.definition.Body': '请求体',
   'api-test.definition.query': '请求',

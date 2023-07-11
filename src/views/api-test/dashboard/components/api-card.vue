@@ -14,26 +14,46 @@
           :span="{ xs: 8, sm: 8, md: 8, lg: 8, xl: 8, xxl: 4 }"
         >
           <a-space>
-            <a-statistic
-              :value="273"
-              :value-from="0"
-              animation
-              show-group-separator
-            ></a-statistic>
+            <div class="circle"
+              ><a-statistic
+                :value="273"
+                :value-from="0"
+                animation
+                show-group-separator
+                class="centered-value"
+              >
+                <template #suffix>
+                  <icon-arrow-rise />
+                </template>
+              </a-statistic>
+            </div>
           </a-space>
         </a-grid-item>
         <a-grid-item
           class="panel-col"
           :span="{ xs: 4, sm: 4, md: 4, lg: 4, xl: 4, xxl: 2 }"
         >
-          <a-space direction="vertical">
-            <a-statistic title="HTTP" :value="123" show-group-separator>
-              <template #prefix></template>
-            </a-statistic>
-            <a-statistic title="RPC" :value="231" show-group-separator />
-            <a-statistic title="TCP" :value="21" show-group-separator />
-            <a-statistic title="SQL" :value="32" show-group-separator />
-          </a-space>
+          <div v-for="row in rows">
+            <div class="statistic-container">
+              <div class="color-block"></div>
+              <div class="title">{{ row.title }}</div>
+              <div class="value">{{ row.value }}</div>
+            </div>
+          </div>
+          <!--          <div class="statistic-container">-->
+          <!--            <div class="color-block"></div>-->
+          <!--            <div class="title">HTTP</div>-->
+          <!--            <div class="value">123</div> </div-->
+          <!--          ><div class="statistic-container">-->
+          <!--            <div class="title">SQL</div>-->
+          <!--            <div class="value">123</div> </div-->
+          <!--          ><div class="statistic-container">-->
+          <!--            <div class="title">RPC</div>-->
+          <!--            <div class="value">123</div> </div-->
+          <!--          ><div class="statistic-container">-->
+          <!--            <div class="title">TCP</div>-->
+          <!--            <div class="value">123</div>-->
+          <!--          </div>-->
         </a-grid-item>
         <a-grid-item
           class="panel-col"
@@ -50,7 +70,43 @@
 
 <script lang="ts" setup>
   import useLoading from '@/hooks/loading';
+  import { reactive } from 'vue';
   const { loading } = useLoading();
+  interface Row {
+    id: number;
+    title: string;
+    value: number;
+  }
+
+  const rows = reactive<Row[]>([]);
 </script>
 
-<style lang="less" scoped></style>
+<style lang="less" scoped>
+  .statistic-container {
+    position: relative;
+    display: flex;
+    padding-left: 24px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .color-block {
+    position: absolute;
+    left: 0;
+    width: 16px;
+    height: 100%;
+    background-color: #ff0000;
+  }
+
+  .circle {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    border: 9px solid #b391e8;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+</style>
