@@ -2,8 +2,8 @@ import { DEFAULT_LAYOUT } from '../base';
 import { AppRouteRecordRaw } from '../types';
 
 const ApiTest: AppRouteRecordRaw = {
-  path: '/apiManagement',
-  name: 'apiManagement',
+  path: '/api-test',
+  name: 'api-test',
   component: DEFAULT_LAYOUT,
   meta: {
     locale: 'menu.api-test',

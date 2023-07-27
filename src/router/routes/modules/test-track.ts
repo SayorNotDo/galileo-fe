@@ -1,7 +1,7 @@
 import { DEFAULT_LAYOUT } from '../base';
 import { AppRouteRecordRaw } from '../types';
 
-const DASHBOARD: AppRouteRecordRaw = {
+const TestTrack: AppRouteRecordRaw = {
   path: '/test-track',
   name: 'test-track',
   component: DEFAULT_LAYOUT,
@@ -13,7 +13,7 @@ const DASHBOARD: AppRouteRecordRaw = {
   },
   children: [
     {
-      path: 'Debug',
+      path: 'debug',
       name: 'Debug',
       component: () => import('@/views/test-track/debug/index.vue'),
       meta: {
@@ -23,7 +23,7 @@ const DASHBOARD: AppRouteRecordRaw = {
       },
     },
     {
-      path: 'Task',
+      path: 'task',
       name: 'Task',
       component: () => import('@/views/test-track/task/index.vue'),
       meta: {
@@ -35,4 +35,4 @@ const DASHBOARD: AppRouteRecordRaw = {
   ],
 };
 
-export default DASHBOARD;
+export default TestTrack;

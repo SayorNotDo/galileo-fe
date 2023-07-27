@@ -6,7 +6,7 @@
       :body-style="{ padding: '17px 20px 21px 20px' }"
     >
       <template #title>
-        {{ $t('dashboard.sceneCount') }}
+        {{ $t('workstation.sceneCount') }}
       </template>
     </a-card>
   </a-spin>

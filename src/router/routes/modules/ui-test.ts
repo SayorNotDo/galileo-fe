@@ -1,14 +1,14 @@
 import { DEFAULT_LAYOUT } from '../base';
 import { AppRouteRecordRaw } from '../types';
 
-const UiManagement: AppRouteRecordRaw = {
-  path: '/uiManagement',
-  name: 'uiManagement',
+const UiTest: AppRouteRecordRaw = {
+  path: '/ui-test',
+  name: 'ui-test',
   component: DEFAULT_LAYOUT,
   meta: {
     locale: 'menu.ui-test',
     requiresAuth: true,
-    icon: 'icon-dashboard',
+    icon: 'icon-sun-fill',
     order: 2,
   },
   children: [
@@ -24,4 +24,4 @@ const UiManagement: AppRouteRecordRaw = {
     },
   ],
 };
-export default UiManagement;
+export default UiTest;

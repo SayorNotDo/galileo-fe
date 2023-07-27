@@ -5,7 +5,7 @@
       :header-style="{ paddingBottom: '0' }"
       :body-style="{ padding: '17px 20px 21px 20px' }"
     >
-      <template #title> {{ $t('dashboard.caseCount') }} </template>
+      <template #title> {{ $t('workstation.caseCount') }} </template>
     </a-card>
   </a-spin>
 </template>

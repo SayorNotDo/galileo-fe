@@ -71,12 +71,12 @@ setupMock({
     Mock.mock(new RegExp('/api/user/menu'), () => {
       const menuList = [
         {
-          path: '/dashboard',
+          path: '/workstation',
           name: 'dashboard',
           meta: {
             locale: 'menu.server.dashboard',
             requiresAuth: true,
-            icon: 'icon-dashboard',
+            icon: 'icon-workstation',
             order: 1,
           },
           children: [

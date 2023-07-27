@@ -6,7 +6,7 @@
       :body-style="{ padding: '17px 20px 21px 20px' }"
     >
       <template #title>
-        {{ $t('dashboard.apiCount') }}
+        {{ $t('workstation.apiCount') }}
       </template>
       <a-grid :cols="12" :row-gap="8" class="panel">
         <a-grid-item

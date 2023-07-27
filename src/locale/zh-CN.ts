@@ -1,7 +1,7 @@
 import localeMessageBox from '@/components/message-box/locale/zh-CN';
 import localeLogin from '@/views/login/locale/zh-CN';
 
-import localeWorkplace from '@/views/dashboard/workplace/locale/zh-CN';
+import localeWorkplace from '@/views/workstation/workplace/locale/zh-CN';
 
 import localeApiDefinition from '@/views/api-test/definition/locale/zh-CN';
 
@@ -15,11 +15,14 @@ import localeTestTrackDebug from '@/views/test-track/debug/locale/zh-CN';
 
 import localeTestTrackTask from '@/views/test-track/task/locale/zh-CN';
 
+import localeTestAnalysisDashboard from '@/views/test-analysis/dashboard/locale/zh-CN';
+
 export default {
-  'menu.dashboard': '工作台',
+  'menu.workstation': '工作台',
   'menu.server.dashboard': '测试管理-服务端',
   'menu.test-track': '测试管理',
-  'menu.server.monitor': '实时监控-服务端',
+  'menu.test-analysis': '测试分析',
+  'menu.data-management': '数据管理',
   'menu.list': '列表页',
   'menu.result': '结果页',
   'menu.exception': '异常页',
@@ -27,8 +30,6 @@ export default {
   'menu.profile': '详情页',
   'menu.visualization': '数据可视化',
   'menu.user': '个人中心',
-  'menu.arcoWebsite': 'Arco Design',
-  'menu.faq': '常见问题',
   'navbar.docs': '文档中心',
   'navbar.action.locale': '切换为中文',
   ...localeSettings,
@@ -40,4 +41,5 @@ export default {
   ...localeUiManagement,
   ...localeTestTrackDebug,
   ...localeTestTrackTask,
+  ...localeTestAnalysisDashboard,
 };
