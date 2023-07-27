@@ -22,6 +22,16 @@ const TestAnalysis: AppRouteRecordRaw = {
         roles: ['*'],
       },
     },
+    {
+      path: 'analysis',
+      name: 'analysis',
+      component: () => import('@/views/test-analysis/analysis/index.vue'),
+      meta: {
+        locale: 'menu.test-analysis.analysis',
+        requiresAuth: true,
+        roles: ['*'],
+      },
+    },
   ],
 };
 

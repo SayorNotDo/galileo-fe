@@ -17,6 +17,9 @@ import localeTestTrackTask from '@/views/test-track/task/locale/zh-CN';
 
 import localeTestAnalysisDashboard from '@/views/test-analysis/dashboard/locale/zh-CN';
 
+import localeDataManagementProperties from '@/views/data-management/properties/locale/zh-CN';
+
+import localeTestAnalysisAnalysis from '@/views/test-analysis/analysis/locale/zh-CN';
 export default {
   'menu.workstation': '工作台',
   'menu.server.dashboard': '测试管理-服务端',
@@ -42,4 +45,6 @@ export default {
   ...localeTestTrackDebug,
   ...localeTestTrackTask,
   ...localeTestAnalysisDashboard,
+  ...localeDataManagementProperties,
+  ...localeTestAnalysisAnalysis,
 };
