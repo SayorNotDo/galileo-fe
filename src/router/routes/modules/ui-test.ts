@@ -9,7 +9,7 @@ const UiManagement: AppRouteRecordRaw = {
     locale: 'menu.ui-test',
     requiresAuth: true,
     icon: 'icon-dashboard',
-    order: 1,
+    order: 2,
   },
   children: [
     {

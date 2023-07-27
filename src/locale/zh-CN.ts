@@ -8,12 +8,17 @@ import localeApiDefinition from '@/views/api-test/definition/locale/zh-CN';
 import localApiDashboard from '@/views/api-test/dashboard/locale/zh-CN';
 
 import localeUiManagement from '@/views/ui-test/element-management/locale/zh-CN';
+
 import localeSettings from './zh-CN/settings';
+
+import localeTestTrackDebug from '@/views/test-track/debug/locale/zh-CN';
+
+import localeTestTrackTask from '@/views/test-track/task/locale/zh-CN';
 
 export default {
   'menu.dashboard': '工作台',
   'menu.server.dashboard': '测试管理-服务端',
-  'menu.server.workplace': '测试跟踪-服务端',
+  'menu.test-track': '测试管理',
   'menu.server.monitor': '实时监控-服务端',
   'menu.list': '列表页',
   'menu.result': '结果页',
@@ -33,4 +38,6 @@ export default {
   ...localApiDashboard,
   ...localeApiDefinition,
   ...localeUiManagement,
+  ...localeTestTrackDebug,
+  ...localeTestTrackTask,
 };
