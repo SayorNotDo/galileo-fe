@@ -10,7 +10,10 @@
       :style="{ width: '100%', height: '100%' }"
       auto-label-width
     >
-      <a-card :title="$t('menu.test-analysis.indicator')" :bordered="false">
+      <a-card
+        :title="$t('test-analysis.condition.indicator')"
+        :bordered="false"
+      >
         <a-form-item>
           <a-row :gutter="4">
             <a-col :span="14">
@@ -26,24 +29,27 @@
             <template #icon>
               <icon-plus></icon-plus>
             </template>
-            {{ $t('menu.test-analysis.addIndicator') }}
+            {{ $t('test-analysis.condition.addIndicator') }}
           </a-button>
         </div>
       </a-card>
-      <a-card :title="$t('menu.test-analysis.globalFilter')" :bordered="false">
+      <a-card
+        :title="$t('test-analysis.condition.globalFilter')"
+        :bordered="false"
+      >
         <a-button type="outline" size="mini">
           <template #icon>
             <icon-plus></icon-plus>
           </template>
-          {{ $t('menu.test-analysis.addFilter') }}
+          {{ $t('test-analysis.condition.addFilter') }}
         </a-button>
       </a-card>
-      <a-card :title="$t('menu.test-analysis.group')" :bordered="false">
+      <a-card :title="$t('test-analysis.condition.group')" :bordered="false">
         <a-button type="outline" size="mini">
           <template #icon>
             <icon-plus></icon-plus>
           </template>
-          {{ $t('menu.test-analysis.addGroup') }}
+          {{ $t('test-analysis.condition.addGroup') }}
         </a-button>
       </a-card>
       <a-card
@@ -51,7 +57,7 @@
         :style="{ position: 'absolute', bottom: '0', right: '0' }"
       >
         <a-button type="outline">
-          {{ $t('menu.test-analysis.calculate') }}
+          {{ $t('test-analysis.condition.calculate') }}
         </a-button>
       </a-card>
     </a-form>

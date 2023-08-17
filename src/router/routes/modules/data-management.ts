@@ -13,6 +13,16 @@ const DataManagement: AppRouteRecordRaw = {
   },
   children: [
     {
+      path: 'metadata',
+      name: 'metadata',
+      component: () => import('@/views/data-management/metadata/index.vue'),
+      meta: {
+        locale: 'menu.data-management.metadata',
+        requiresAuth: true,
+        roles: ['*'],
+      },
+    },
+    {
       path: 'properties',
       name: 'properties',
       component: () => import('@/views/data-management/properties/index.vue'),

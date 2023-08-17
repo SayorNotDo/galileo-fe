@@ -1,5 +1,5 @@
-<template
-  ><div class="container">
+<template>
+  <div class="container">
     <a-card>
       <a-space direction="vertical" :size="10" fill>
         <a-radio-group
@@ -54,13 +54,17 @@
               data-index="operation"
             ></a-table-column>
           </template>
-        </a-table> </a-space></a-card></div
-></template>
+        </a-table>
+      </a-space>
+    </a-card>
+  </div>
+</template>
 
 <script lang="ts" setup>
   import { ref } from 'vue';
   import useLoading from '@/hooks/loading';
   import { TableData } from '@arco-design/web-vue/es/table/interface';
+
   const type = ref('common');
   const { loading, setLoading } = useLoading();
   const renderList = ref<TableData[]>();

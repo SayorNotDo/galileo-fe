@@ -10,8 +10,10 @@
           :bordered="false"
           :style="{ height: '100%' }"
           :body-style="{ padding: '4px', height: '500px' }"
-          ><Filter /> <Report
-        /></a-card>
+        >
+          <Filter />
+          <Report />
+        </a-card>
       </a-grid-item>
     </a-grid>
   </div>
@@ -23,7 +25,7 @@
   import Filter from '@/views/test-analysis/analysis/components/filter.vue';
 
   export default {
-    name: 'index',
+    name: 'analysis',
     components: { Filter, Report, Condition },
   };
 </script>
@@ -33,6 +35,7 @@
     background-color: var(--color-fill-2);
     padding: 16px 20px 0;
   }
+
   .card {
     height: 85vh;
   }
