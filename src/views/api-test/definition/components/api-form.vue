@@ -5,7 +5,9 @@
     auto-label-width
   >
     <a-row :gutter="10" :style="{ marginBottom: '16px' }">
-      <a-col><BaseContent /></a-col>
+      <a-col>
+        <BaseContent />
+      </a-col>
     </a-row>
     <a-row>
       <a-col>

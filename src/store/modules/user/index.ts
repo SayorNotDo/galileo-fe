@@ -3,8 +3,8 @@ import {
   login as userLogin,
   logout as userLogout,
   getUserInfo,
-  LoginData,
 } from '@/api/user';
+import { LoginData } from '@/types/user';
 import { setToken, clearToken } from '@/utils/auth';
 import { removeRouteListener } from '@/utils/route-listener';
 import { UserState } from './types';
@@ -14,6 +14,8 @@ const useUserStore = defineStore('user', {
   state: (): UserState => ({
     nickname: undefined,
     chineseName: undefined,
+    department: undefined,
+    location: undefined,
     email: undefined,
     phone: undefined,
     role: '',

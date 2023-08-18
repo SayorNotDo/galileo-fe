@@ -4,18 +4,18 @@
       <a-space direction="vertical" :size="10" fill>
         <a-space>
           <a-select
-            :style="{ width: '160px' }"
-            placeholder=""
+            :style="{ width: '200px' }"
+            :trigger-props="{ autoFitPopupMinWidth: true }"
+            :placeholder="$t('data-management.metadata.eventType')"
+            :max-tag-count="1"
             multiple
-          ></a-select>
-          <a-select
-            :style="{ width: '160px' }"
-            placeholder=""
-            multiple
-          ></a-select>
+          >
+            <a-option>预置事件</a-option>
+            <a-option>自定义事件</a-option>
+          </a-select>
           <a-input-search
             :style="{ width: '200px' }"
-            placeholder=""
+            :placeholder="$t('common.search')"
           ></a-input-search>
         </a-space>
         <a-table
@@ -36,8 +36,9 @@
           </template>
         </a-table>
       </a-space>
-    </a-card> </div
-></template>
+    </a-card>
+  </div>
+</template>
 
 <script lang="ts" setup>
   import { ref } from 'vue';

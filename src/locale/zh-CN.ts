@@ -19,7 +19,14 @@ import localeTestAnalysisDashboard from '@/views/test-analysis/dashboard/locale/
 
 import localeDataManagementProperties from '@/views/data-management/properties/locale/zh-CN';
 
+import localeDataManagementMetadata from '@/views/data-management/metadata/locale/zh-CN';
+
 import localeTestAnalysisAnalysis from '@/views/test-analysis/analysis/locale/zh-CN';
+
+import localeUserInfo from '@/views/user/info/locale/zh-CN';
+
+import localeUserSetting from '@/views/user/setting/locale/zh-CN';
+
 export default {
   'menu.workstation': '工作台',
   'menu.server.dashboard': '测试管理-服务端',
@@ -35,6 +42,7 @@ export default {
   'menu.user': '个人中心',
   'navbar.docs': '文档中心',
   'navbar.action.locale': '切换为中文',
+  'common.search': '请输入搜索',
   ...localeSettings,
   ...localeMessageBox,
   ...localeLogin,
@@ -47,4 +55,7 @@ export default {
   ...localeTestAnalysisDashboard,
   ...localeDataManagementProperties,
   ...localeTestAnalysisAnalysis,
+  ...localeDataManagementMetadata,
+  ...localeUserInfo,
+  ...localeUserSetting,
 };

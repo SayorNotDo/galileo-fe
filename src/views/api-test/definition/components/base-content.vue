@@ -6,9 +6,11 @@
   >
     <template #extra>
       <a-button type="outline">
-        <template #icon><icon-save /></template>
-        保存</a-button
-      >
+        <template #icon>
+          <icon-save />
+        </template>
+        保存
+      </a-button>
     </template>
     <a-row :gutter="10">
       <a-col :span="12">
@@ -37,7 +39,11 @@
             },
           ]"
         >
-          <a-select v-model="apiForm.owner"></a-select>
+          <a-select v-model="apiForm.owner">
+            <a-option v-for="user in userList" :value="user.id">
+              {{ user.chineseName }}
+            </a-option>
+          </a-select>
         </a-form-item>
       </a-col>
     </a-row>
@@ -89,10 +95,30 @@
   </a-card>
 </template>
 
-<script setup>
-  import { inject } from 'vue';
+<script lang="ts" setup>
+  import { inject, reactive, ref } from 'vue';
+  import useLoading from '@/hooks/loading';
+  import { getUserList } from '@/api/user';
+  import { UserInfo } from '@/api/user';
+  import User from '@/store/modules/user';
+
+  const { setLoading } = useLoading();
 
   const apiForm = inject('apiForm');
+
+  const userList = ref([]);
+  const fetchData = async () => {
+    setLoading(true);
+    try {
+      const response = await getUserList();
+      console.log(response);
+    } catch (err) {
+      console.log(err);
+    } finally {
+      setLoading(false);
+    }
+  };
+  fetchData();
 </script>
 
 <style scoped></style>

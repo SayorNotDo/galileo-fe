@@ -5,5 +5,7 @@ export interface UserState {
   chineseName?: string;
   email?: string;
   phone?: string;
+  department?: string;
+  location?: string;
   role: RoleType;
 }
